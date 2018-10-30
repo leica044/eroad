@@ -3,4 +3,101 @@
 body {
   font-family: 'Poppins', 'Rubik', sans-serif;
   margin: 0;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.Hero {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.LeftTop {
+  background-color: black;
+  width: 45%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.RightTop {
+  background: url('../images/architecture-1867727_1920.png');
+  width: 55%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-size: cover;
+}
+
+h1.top {
+  color: #fff;
+  width: 55%;
+  padding: 30% 0% 0% 20%;
+  font-size: 210%;
+  margin: 0;
+  animation: StartAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.82, 0.2, 1);
+}
+h1.top-red {
+  font-family: 'Poppins-Bold';
+  color: #FF5656;
+  width: 55%;
+  padding: 0% 0% 0% 20%;
+  font-size: 210%;
+  margin: 0;
+  animation: StartAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.82, 0.2, 1);
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+p.title-description {
+  color: #fff;
+  width: 55%;
+  padding: 0% 0% 8% 20%;
+  font-family: 'Poppins';
+  font-size: 130%;
+  color: #B3B3B3;
+  animation: StartAnimation 3s forwards cubic-bezier(0.2, 0.82, 0.2, 1);
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+p {
+  font-family: 'Rubik';
+  color: #fff;
+  width: 55%;
+  padding: 0% 0% 0% 20%;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #B3B3B3;
+}
+
+p.tip {
+  font-family: 'Rubik-Medium';
+  font-size: 80%;
+  font-weight: 500;
+  text-transform: uppercase; 
+}
+
+@keyframes StartAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
